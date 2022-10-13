@@ -23,3 +23,18 @@ https://www.example.org
 
 Results will be presented in stdout.
 
+## Cross-platform Builds:
+### Build for Windows on x86_64
+```
+GOOS="windows" GOARCH="amd64" go build
+```
+
+### Build for Mac on Intel
+```
+GOOS="darwin" GOARCH="amd64" go build
+```
+
+### Build for Mac on Apple Silicon
+```
+GOOS="darwin" GOARCH="arm64" go build
+```
